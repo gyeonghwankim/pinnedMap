@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 align="center"> Pinned Map 🗺📍</h1>
+
+    <div class="wrapper">
+        <div class="map_wrap">
+            <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div>
+        
+            <div id="menu_wrap" class="bg_white">
+                <div class="option">
+                    <div>
+                        <form onsubmit="searchPlaces(); return false;">
+                            <input type="text" placeholder="키워드를 입력하세요" id="keyword" size="20"> 
+                            <button type="submit" style="height:20px;width:40px">검색</button> 
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <ul id="placesList"></ul>
+                <div id="pagination"></div>
+            </div>
+        </div>
+        <div class="panels">
+        </div>
+
+    </div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f07e96ceebe99733c9c8be0d268f8e70&libraries=services"></script>
+    
+    <script src="map.js"></script>
+</body>
+
+
+</html>
